@@ -28,7 +28,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: myacr10101.azurecr.io/emailservice:latest
+        image: myacr10101.azurecr.io/emailservice:1.0-29
         ports:
         - containerPort: 8080
         env:
@@ -83,7 +83,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: myacr10101.azurecr.io/checkoutservice:latest
+          image: myacr10101.azurecr.io/checkoutservice:1.0-29
           ports:
           - containerPort: 5050
           readinessProbe:
@@ -147,7 +147,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: myacr10101.azurecr.io/recommendationservice:latest
+        image: myacr10101.azurecr.io/recommendationservice:1.0-29
         ports:
         - containerPort: 8080
         readinessProbe:
@@ -206,7 +206,7 @@ spec:
       serviceAccountName: default
       containers:
         - name: server
-          image: myacr10101.azurecr.io/frontend:latest
+          image: myacr10101.azurecr.io/frontend:1.0-29
           ports:
           - containerPort: 8080
           readinessProbe:
@@ -305,7 +305,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: myacr10101.azurecr.io/paymentservice:latest
+        image: myacr10101.azurecr.io/paymentservice:1.0-29
         ports:
         - containerPort: 50051
         env:
@@ -359,7 +359,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: myacr10101.azurecr.io/productcatalogservice:latest
+        image: myacr10101.azurecr.io/productcatalogservice:1.0-29
         ports:
         - containerPort: 3550
         env:
@@ -413,7 +413,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: myacr10101.azurecr.io/cartservice:latest
+        image: myacr10101.azurecr.io/cartservice:1.0-29
         ports:
         - containerPort: 7070
         env:
@@ -479,7 +479,7 @@ spec:
               - ALL
           privileged: false
           readOnlyRootFilesystem: true
-        image: myacr10101.azurecr.io/loadgenerator:latest
+        image: myacr10101.azurecr.io/loadgenerator:1.0-29
         env:
         - name: FRONTEND_ADDR
           value: "frontend:80"
@@ -512,7 +512,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: myacr10101.azurecr.io/currencyservice:latest
+        image: myacr10101.azurecr.io/currencyservice:1.0-29
         ports:
         - name: grpc
           containerPort: 7000
@@ -566,7 +566,7 @@ spec:
       serviceAccountName: default
       containers:
       - name: server
-        image: myacr10101.azurecr.io/shippingservice:latest
+        image: myacr10101.azurecr.io/shippingservice:1.0-29
         ports:
         - containerPort: 50051
         env:
@@ -674,7 +674,7 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: server
-        image: myacr10101.azurecr.io/adservice:latest
+        image: myacr10101.azurecr.io/adservice:1.0-29
         ports:
         - containerPort: 9555
         env:
