@@ -52,7 +52,7 @@ spec:
             cpu: 200m
             memory: 128Mi
       imagePullSecrets:
-      - name: acr-image-secret
+      - name: my-acr-secret
 ---
 apiVersion: v1
 kind: Service
@@ -115,7 +115,7 @@ spec:
               cpu: 200m
               memory: 128Mi
       imagePullSecrets:
-      - name: acr-image-secret
+      - name: my-acr-secret
 ---
 apiVersion: v1
 kind: Service
@@ -173,7 +173,7 @@ spec:
             cpu: 200m
             memory: 450Mi
       imagePullSecrets:
-      - name: acr-image-secret
+      - name: my-acr-secret
 ---
 apiVersion: v1
 kind: Service
@@ -260,7 +260,7 @@ spec:
               cpu: 200m
               memory: 128Mi
       imagePullSecrets:
-      - name: acr-image-secret
+      - name: my-acr-secret
 ---
 apiVersion: v1
 kind: Service
@@ -327,7 +327,7 @@ spec:
             cpu: 200m
             memory: 128Mi
       imagePullSecrets:
-      - name: acr-image-secret
+      - name: my-acr-secret
 ---
 apiVersion: v1
 kind: Service
@@ -381,7 +381,7 @@ spec:
             cpu: 200m
             memory: 128Mi
       imagePullSecrets:
-      - name: acr-image-secret
+      - name: my-acr-secret
 ---
 apiVersion: v1
 kind: Service
@@ -436,7 +436,7 @@ spec:
           exec:
             command: ["/bin/grpc_health_probe", "-addr=:7070", "-rpc-timeout=5s"]
       imagePullSecrets:
-      - name: acr-image-secret
+      - name: my-acr-secret
 ---
 apiVersion: v1
 kind: Service
@@ -493,7 +493,7 @@ spec:
             cpu: 500m
             memory: 512Mi
       imagePullSecrets:
-      - name: acr-image-secret
+      - name: my-acr-secret
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -535,7 +535,7 @@ spec:
             cpu: 200m
             memory: 128Mi
       imagePullSecrets:
-      - name: acr-image-secret
+      - name: my-acr-secret
 ---
 apiVersion: v1
 kind: Service
@@ -589,7 +589,7 @@ spec:
             cpu: 200m
             memory: 128Mi
       imagePullSecrets:
-      - name: acr-image-secret
+      - name: my-acr-secret
 ---
 apiVersion: v1
 kind: Service
@@ -698,7 +698,7 @@ spec:
           exec:
             command: ["/bin/grpc_health_probe", "-addr=:9555"]
       imagePullSecrets:
-      - name: acr-image-secret
+      - name: my-acr-secret
 ---
 apiVersion: v1
 kind: Service
